@@ -9,7 +9,7 @@ const contenitore = document.getElementById("container");
 console.log(contenitore);
 
 // creare bottone
-const button = document.getElementById("button")
+const button = document.getElementById("button");
 
 button.addEventListener ("click",
 
@@ -21,7 +21,7 @@ button.addEventListener ("click",
             
             myElement.addEventListener("click",
                 function() {
-                    myElement.classList.add("clicked");
+                    this.classList.add("clicked");
                     console.log('Hai cliccato la cella:', i);
                 }
             )
